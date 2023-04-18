@@ -1,6 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         int intVar = 2147483647;
@@ -13,6 +13,7 @@ public class main {
 
         float floatVar = 1.3F;
         double doubleVar = 123456789.65656565656565;
+        System.out.println(floatVar + " " + doubleVar);
 
         // деление целых чисел с получением числа в плавающей точкой
         int a = 2;
@@ -24,6 +25,7 @@ public class main {
 
         // логические операторы
         boolean result = a > b; // получим false
+        System.out.println(result);
         int randomFirst = ThreadLocalRandom.current().nextInt(1, 100);
         int randomSecond = ThreadLocalRandom.current().nextInt(1, 100);
         String compare = randomFirst > randomSecond ? "larger" : "smaller" ;
